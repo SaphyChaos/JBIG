@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - floor
+  - building
+  - wall
+  - wallInner
   layers:
   - Default
   - TransparentFX

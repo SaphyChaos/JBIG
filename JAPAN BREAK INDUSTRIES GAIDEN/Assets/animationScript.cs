@@ -29,9 +29,13 @@ public class animationScript : MonoBehaviour
         {
             myAnim.Play("jump");
         }
-        else if(Mathf.Abs(myCharScript.speed) > 0)
+        else if(Mathf.Abs(myCharScript.speed) > 0 && myCharScript.climbing == false)
         {
             myAnim.Play("running");
+        }
+        else if (myCharScript.climbing)
+        {
+            myAnim.Play("climbing");
         }
         else
         {
