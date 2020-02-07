@@ -5,6 +5,11 @@ using UnityEngine;
 public class charControl : MonoBehaviour
 {
     public GameObject protag;
+    public GameObject camera;
+    public GameObject cameraCenter;
+    public bool cameraLock;
+    public bool cameraJerk;
+    private bool canJerk;
     public float speed;
     public float maxSpeed;
     public float groundAccel;
@@ -22,6 +27,7 @@ public class charControl : MonoBehaviour
     public bool m_FacingRight;
     public bool climbing;
     public bool canClimb;
+    public bool canControl;//note: can controll turns off everything, even psysics updating
     public int squatFrames;
     private int squatCounter;
     public float jumpAccel;
@@ -34,6 +40,7 @@ public class charControl : MonoBehaviour
     public Collider2D groundBox;
     public Collider2D wallBox;
     public GameObject[] buildings;
+    float frame = 0.01666666667f;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +62,7 @@ public class charControl : MonoBehaviour
         m_FacingRight = !m_FacingRight;
 
         // Multiply the player's x local scale by -1.
+
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
@@ -111,188 +119,217 @@ public class charControl : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (squat)
+        camera.transform.position = new Vector3(cameraCenter.transform.position.x, cameraCenter.transform.position.y, camera.transform.position.z);
+        if (canControl)
         {
-            squatCounter += 1;
-            if(squatCounter > squatFrames)
+            if (Input.GetAxisRaw("Fire2") == 0f) { canJerk = true; }
+            if (Input.GetAxisRaw("Fire2") > 0 && cameraJerk == false && canJerk)
             {
-                squat = false;
-                jumping = true;
-                grounded = false;
-                if (Input.GetAxisRaw("Jump") > 0)
-                {
-                    jump(false);
-                }
-                else
-                {
-                    jump(true);
-                }
+                /*
+                Vector3 camMove = new Vector3(0f, .5f, 0f);
+                cameraCenter.transform.position = Vector3.Lerp(cameraCenter.transform.position, cameraCenter.transform.position - camMove, .1f);
+                */
+                canJerk = false;
+                cameraJerk = true;
             }
-            return;
-        }
-        else
-        {
-            squatCounter = 0;
-        }
-        if(Input.GetAxisRaw("climb") == 0)
-            regrabTimer += 1;
-        if(!grounded && !climbing)
-        {
-            jumping = true;
-        }
-        if (canClimb && Input.GetAxisRaw("climb") > 0 && !climbing && regrabTimer > 5)
-        {
-            //print("climbing");
-            climbing = true;
-            jumping = false;
-            jumpSpeed = 0f;
-            regrabTimer = 0;
-            maxSpeed = climbMax;
-            accel = climbAccel;
-        }
-        else if (!canClimb)
-        {
-            climbing = false;
-            regrabTimer = 0;
-        }
-        else if(climbing && Input.GetAxisRaw("climb") > 0 && regrabTimer > 5)
-        {
-            climbing = false;
-            regrabTimer = 0;
-        }
-        if (!climbing)
-        {
-            speedY = 0f;
-            if (!grounded)
+            else if (Input.GetAxisRaw("Fire2") > 0 && cameraJerk == true && canJerk)
             {
-                jumping = true;
-                accel = airAccel;
+                /*
+                Vector3 camMove = new Vector3(0f, .5f, 0f);
+                cameraCenter.transform.position = Vector3.Lerp(cameraCenter.transform.position, cameraCenter.transform.position + camMove, .1f);
+                */
+                canJerk = false;
+                cameraJerk = false;
+            }
+
+            
+            if (squat)
+            {
+                squatCounter += 1;
+                //if (squatCounter*Time.deltaTime > (float)squatFrames*frame)
+                if(squatCounter > squatFrames)
+                {
+                    print(squatCounter);
+                    print(squatCounter * Time.deltaTime);
+                    print((float)squatFrames * frame);
+                    print(squatFrames);
+                    squat = false;
+                    jumping = true;
+                    grounded = false;
+                    if (Input.GetAxisRaw("Jump") > 0)
+                    {
+                        jump(false);
+                    }
+                    else
+                    {
+                        jump(true);
+                    }
+                }
+                return;
             }
             else
             {
-                jumping = false;
-                accel = groundAccel;
+                squatCounter = 0;
             }
-        }
-        if (climbing)
-        {
-            if (Input.GetAxisRaw("Vertical") > 0)// && speed < maxSpeed)
+            if (Input.GetAxisRaw("climb") == 0)
+                regrabTimer += 1;
+            if (!grounded && !climbing)
             {
-                speedY += accel;
-                if (speedY > maxSpeed)
+                jumping = true;
+            }
+            if (canClimb && Input.GetAxisRaw("climb") > 0 && !climbing && regrabTimer > 5)
+            {
+                //print("climbing");
+                climbing = true;
+                jumping = false;
+                jumpSpeed = 0f;
+                regrabTimer = 0;
+                maxSpeed = climbMax;
+                accel = climbAccel;
+            }
+            else if (!canClimb)
+            {
+                climbing = false;
+                regrabTimer = 0;
+            }
+            else if (climbing && Input.GetAxisRaw("climb") > 0 && regrabTimer > 5)
+            {
+                climbing = false;
+                regrabTimer = 0;
+            }
+            if (!climbing)
+            {
+                speedY = 0f;
+                if (!grounded)
                 {
-                    speedY = maxSpeed;
+                    jumping = true;
+                    accel = airAccel;
+                }
+                else
+                {
+                    jumping = false;
+                    accel = groundAccel;
                 }
             }
-            else if (Input.GetAxisRaw("Vertical") < 0)// && Mathf.Abs(speed) < maxSpeed)
+            if (climbing)
             {
-                speedY -= accel;
-                if (Mathf.Abs(speedY) > maxSpeed)
+                if (Input.GetAxisRaw("Vertical") > 0)// && speed < maxSpeed)
                 {
-                    speedY = -maxSpeed;
+                    speedY += accel;
+                    if (speedY > maxSpeed)
+                    {
+                        speedY = maxSpeed;
+                    }
+                }
+                else if (Input.GetAxisRaw("Vertical") < 0)// && Mathf.Abs(speed) < maxSpeed)
+                {
+                    speedY -= accel;
+                    if (Mathf.Abs(speedY) > maxSpeed)
+                    {
+                        speedY = -maxSpeed;
+                    }
+                }
+                else
+                {
+                    if (jumping == false && squat == false)
+                    {
+                        if (Mathf.Abs(speedY) < decel)
+                        {
+                            speedY = 0;
+                        }
+                        if (speedY > 0) speedY -= decel;
+                        else if (speedY < 0) speedY += decel;
+                    }
+                }
+            }
+            if (Input.GetAxisRaw("Horizontal") > 0)// && speed < maxSpeed)
+            {
+                speed += accel;
+                if (speed > maxSpeed)
+                {
+                    speed = maxSpeed;
+                }
+            }
+            else if (Input.GetAxisRaw("Horizontal") < 0)// && Mathf.Abs(speed) < maxSpeed)
+            {
+                speed -= accel;
+                if (Mathf.Abs(speed) > maxSpeed)
+                {
+                    speed = -maxSpeed;
                 }
             }
             else
             {
                 if (jumping == false && squat == false)
                 {
-                    if (Mathf.Abs(speedY) < decel)
+                    if (Mathf.Abs(speed) < decel)
                     {
-                        speedY = 0;
+                        speed = 0;
                     }
-                    if (speedY > 0) speedY -= decel;
-                    else if (speedY < 0) speedY += decel;
+                    if (speed > 0) speed -= decel;
+                    else if (speed < 0) speed += decel;
                 }
             }
-        }
-        if (Input.GetAxisRaw("Horizontal") > 0)// && speed < maxSpeed)
-        {
-            speed += accel;
-            if (speed > maxSpeed)
+            if (speed == 0 && !climbing)
             {
-                speed = maxSpeed;
+                maxSpeed = dashMax;//not moving resets dashing
             }
-        }
-        else if (Input.GetAxisRaw("Horizontal") < 0)// && Mathf.Abs(speed) < maxSpeed)
-        {
-            speed -= accel;
-            if (Mathf.Abs(speed) > maxSpeed)
+            else
             {
-                speed = -maxSpeed;
-            }
-        }
-        else
-        {
-            if (jumping == false && squat == false)
-            {
-                if (Mathf.Abs(speed) < decel)
+                if (maxSpeed > jogMax && !climbing)
                 {
-                    speed = 0;
+                    maxSpeed -= dashDecel;//maybe this shouldn't be the same variable
                 }
-                if (speed > 0) speed -= decel;
-                else if (speed < 0) speed += decel;
             }
-        }
-        if(speed == 0 && !climbing)
-        {
-            maxSpeed = dashMax;//not moving resets dashing
-        }
-        else
-        {
-            if(maxSpeed > jogMax && !climbing)
+            if (maxSpeed < jogMax && !climbing)
             {
-                maxSpeed -= dashDecel;//maybe this shouldn't be the same variable
+                maxSpeed = jogMax;//jogMax is the slowest maxSpeed
             }
-        }
-        if (maxSpeed < jogMax && !climbing)
-        {
-            maxSpeed = jogMax;//jogMax is the slowest maxSpeed
-        }
-        else if (maxSpeed < climbMax && climbing)
-        {
-            maxSpeed = climbMax;//jogMax is the slowest maxSpeed
-        }
-        /*
-        if(speed > maxSpeed)
-        {
-            speed -= .01f;
-        }
-        else if(speed < -maxSpeed)
-        {
-            speed += .01f;
-        }
-        */
-        //print(speed);
+            else if (maxSpeed < climbMax && climbing)
+            {
+                maxSpeed = climbMax;//jogMax is the slowest maxSpeed
+            }
+            /*
+            if(speed > maxSpeed)
+            {
+                speed -= .01f;
+            }
+            else if(speed < -maxSpeed)
+            {
+                speed += .01f;
+            }
+            */
+            //print(speed);
+            if (jumping)
+            {
+                protag.transform.position = new Vector3(protag.transform.position.x + (speed), protag.transform.position.y + jumpSpeed, protag.transform.position.z);
+                jumpSpeed -= gravityAccel;
+                if (jumpSpeed < termVel)
+                {
+                    jumpSpeed = termVel;
+                }
+            }
+            else
+            {
+                protag.transform.position = new Vector3(protag.transform.position.x + speed, protag.transform.position.y + speedY, protag.transform.position.z);
+                if (speed < 0 && m_FacingRight && !climbing)
+                {
+                    protag.transform.position = new Vector3(protag.transform.position.x - .45f, protag.transform.position.y + jumpSpeed, protag.transform.position.z);
+                    Flip();
 
-        if (jumping)
-        {
-            protag.transform.position = new Vector3(protag.transform.position.x + (speed), protag.transform.position.y + jumpSpeed, protag.transform.position.z);
-            jumpSpeed -= gravityAccel;
-            if(jumpSpeed < termVel)
-            {
-                jumpSpeed = termVel;
+                }
+                else if (speed > 0 && !m_FacingRight && !climbing)
+                {
+                    protag.transform.position = new Vector3(protag.transform.position.x + .45f, protag.transform.position.y + jumpSpeed, protag.transform.position.z);
+                    Flip();
+                }
             }
-        }
-        else
-        {
-            protag.transform.position = new Vector3(protag.transform.position.x + speed, protag.transform.position.y + speedY, protag.transform.position.z);
-            if (speed < 0 && m_FacingRight)
+            if (Input.GetAxisRaw("Jump") > 0 && (grounded == true || climbing == true) && squat == false)
             {
-                protag.transform.position = new Vector3(protag.transform.position.x - .45f, protag.transform.position.y + jumpSpeed, protag.transform.position.z);
-                Flip();
-
+                squat = true;
             }
-            else if (speed > 0 && !m_FacingRight)
-            {
-                protag.transform.position = new Vector3(protag.transform.position.x + .45f, protag.transform.position.y + jumpSpeed, protag.transform.position.z);
-                Flip();
-            }
-        }
-        if (Input.GetAxisRaw("Jump") > 0 && (grounded == true || climbing == true) && squat == false)
-        {
-            squat = true;
         }
     }
 }

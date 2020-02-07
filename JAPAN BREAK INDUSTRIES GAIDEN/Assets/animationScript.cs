@@ -6,6 +6,7 @@ public class animationScript : MonoBehaviour
 {
     public charControl myCharScript;
     public Animator myAnim;
+    public Animator cameraAnim;
     /*
     public AnimationClip idle;
     public AnimationClip run;
@@ -40,6 +41,14 @@ public class animationScript : MonoBehaviour
         else
         {
             myAnim.Play("idle");
+        }
+        if (myCharScript.cameraJerk)
+        {
+            cameraAnim.Play("cameraLurch");
+        }
+        else if(myCharScript.cameraJerk == false)
+        {
+            cameraAnim.Play("cameraLurchBack");
         }
     }
 }
