@@ -1,0 +1,267 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.4f1 (4cd64a618c1b) revision 5035594'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16295 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity Projects/Runners VS Rockets/Runners VS Rockets Revengance
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57732
+Successfully changed project path to: D:/Unity Projects/Runners VS Rockets/Runners VS Rockets Revengance
+D:/Unity Projects/Runners VS Rockets/Runners VS Rockets Revengance
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Projects/Runners VS Rockets/Runners VS Rockets Revengance/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     6052 MB
+    Driver:   27.21.14.6647
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001341 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.914 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002003 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.911 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2106 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.8 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2539.
+Total: 4.683000 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.086200 ms MarkObjects: 4.313900 ms  DeleteObjects: 0.106100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/art/building2.png
+  artifactKey: Guid(c87abafc01ba47b42a2323efae8071a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/building2.png using Guid(c87abafc01ba47b42a2323efae8071a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166dc0f7eeeff2162fc581a18fe1c103') in 0.108095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/art/justShaft.png
+  artifactKey: Guid(5d5d47a9eaa672f47bbbddc40b95a47e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/justShaft.png using Guid(5d5d47a9eaa672f47bbbddc40b95a47e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0d3f3938a198bfcf3581f0068760eb') in 0.016857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/art/walkway.png
+  artifactKey: Guid(99118a6bba1dc734897ffb2abf5d4a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/walkway.png using Guid(99118a6bba1dc734897ffb2abf5d4a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b6aa3c1725674b3c474a5bb7810a01') in 0.014289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/art/exit sign.png
+  artifactKey: Guid(9605daf22a4cbc649963c0bc57268e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/exit sign.png using Guid(9605daf22a4cbc649963c0bc57268e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10c9e0f1473359b2a04ea868b01e5f5') in 0.014283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/art/building1.png
+  artifactKey: Guid(a7990b109f5ce034081dfb852c645c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/building1.png using Guid(a7990b109f5ce034081dfb852c645c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc554ccf25f6bb9da5700b3938dc9bea') in 0.019185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/art/building3.png
+  artifactKey: Guid(0d3ed4b590f922045b401923a32de432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/building3.png using Guid(0d3ed4b590f922045b401923a32de432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97baedc46de95a5f3f9db5efc052f9d9') in 0.016759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/art/shaft.png
+  artifactKey: Guid(cd34481dd4dcce24185c26412b860ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/shaft.png using Guid(cd34481dd4dcce24185c26412b860ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c5b4c3e8ca89918ebc576d817916d9') in 0.013368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/art/ladder.png
+  artifactKey: Guid(84e9a2e5e75fc9649a25df87f13f7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/ladder.png using Guid(84e9a2e5e75fc9649a25df87f13f7ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72032e3384a24ac09929f4a5914256f9') in 0.010421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/art/building tiles.png
+  artifactKey: Guid(2006d0d7dd950e743a210bff40fe2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/building tiles.png using Guid(2006d0d7dd950e743a210bff40fe2af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0d35e3966659f4538e8606bde53454') in 0.014554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/art/co1ie5oc.bmp
+  artifactKey: Guid(6960390fa18565b4983566221b6669a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/co1ie5oc.bmp using Guid(6960390fa18565b4983566221b6669a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f0cfbb35a5c43298092ff2c3219085') in 0.013405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/preFab/protag 929.prefab
+  artifactKey: Guid(63eb3dcf20c97754cae30fdae6526979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/preFab/protag 929.prefab using Guid(63eb3dcf20c97754cae30fdae6526979) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'animCont': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'animCont': Transition 'AnyState -> jump' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'animCont': Transition 'AnyState -> running' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'animCont': Transition 'AnyState -> squat' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'cameraCenter': Transition 'AnyState -> cameraLurch' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+Asset 'cameraCenter': Transition 'AnyState -> cameraLurchBack' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '3a972554e70e0ddf641882a191cb83c6') in 0.047866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/RVR.inputactions
+  artifactKey: Guid(1db4ff51bf0a6654683a435f4782d73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RVR.inputactions using Guid(1db4ff51bf0a6654683a435f4782d73b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a877c24f553226d3dcfcbae4a4eabc11') in 0.010611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/art/door.png
+  artifactKey: Guid(0490351d9e9b77244875584c07a468eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/door.png using Guid(0490351d9e9b77244875584c07a468eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6241fa6ce9494847824305f76d55d41') in 0.010638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/art/c91dmgsx.bmp
+  artifactKey: Guid(256ebb3798d84994595827566291c339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/c91dmgsx.bmp using Guid(256ebb3798d84994595827566291c339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fd50c487295ec1c396c899cecbc0607') in 0.256428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/art/ls16uid6.bmp
+  artifactKey: Guid(576557e3a7999334d860d1d0d4b76dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/ls16uid6.bmp using Guid(576557e3a7999334d860d1d0d4b76dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c54453fe35f4bd1569af2da7daebaa') in 0.196216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/art/megaman building sprites.png
+  artifactKey: Guid(42fe9d1d164055a48b41ea5a7570fa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/megaman building sprites.png using Guid(42fe9d1d164055a48b41ea5a7570fa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1749d4b8f1d3dbebd30cb0db425fc2') in 0.021023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/art/megaman Sprites.gif
+  artifactKey: Guid(037f41fd7ac7abe45a19775d6ceed099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/megaman Sprites.gif using Guid(037f41fd7ac7abe45a19775d6ceed099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f839d962b8a9d717d640fac1eaf4ff86') in 0.180913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/art/SNES - Mega Man X - Spark Mandrill Stage.png
+  artifactKey: Guid(462656446ed7c67438a584fda32a9292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/SNES - Mega Man X - Spark Mandrill Stage.png using Guid(462656446ed7c67438a584fda32a9292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04a4b6991b25b12eefd15cd023b3eae') in 0.022532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/art/background.jpg
+  artifactKey: Guid(9b4f7b401120f044494e855759b5a18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/background.jpg using Guid(9b4f7b401120f044494e855759b5a18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056211ce339180cc0b85537a926e80b2') in 0.020534 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
