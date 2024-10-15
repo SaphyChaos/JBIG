@@ -402,7 +402,7 @@ TextureImporter:
       213: 6140095787029849393
     second: ls16uid6_132
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -419,9 +419,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -430,9 +433,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -453,9 +456,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -467,6 +476,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -479,6 +489,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3287,9 +3311,142 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      ls16uid6_0: 6508648150952153052
+      ls16uid6_1: -2957151013321878978
+      ls16uid6_10: -1927178464112528745
+      ls16uid6_100: 6409930765862127224
+      ls16uid6_101: -1911307497909303319
+      ls16uid6_102: -769061615462849950
+      ls16uid6_103: 5335213351256808382
+      ls16uid6_104: 168776230112903503
+      ls16uid6_105: 4317629402709915425
+      ls16uid6_106: -4874688105867977332
+      ls16uid6_107: -2929030010362786626
+      ls16uid6_108: -5501416900353379562
+      ls16uid6_109: 6122025939333720086
+      ls16uid6_11: -695213409003360895
+      ls16uid6_110: 9023843073649710285
+      ls16uid6_111: -6382787508243588556
+      ls16uid6_112: 2154128406898712535
+      ls16uid6_113: 6172477755592449676
+      ls16uid6_114: 2584576409761513095
+      ls16uid6_115: 1265162298263426059
+      ls16uid6_116: 8306433502984668264
+      ls16uid6_117: -6230943888583529582
+      ls16uid6_118: -8719453459220986430
+      ls16uid6_119: -179681586981706395
+      ls16uid6_12: 2221909321087087189
+      ls16uid6_120: 6596506919396176655
+      ls16uid6_121: -7406843889282487250
+      ls16uid6_122: 5748281258269956474
+      ls16uid6_123: -1390267142393284298
+      ls16uid6_124: -2690975703552138670
+      ls16uid6_125: -2281288881666447078
+      ls16uid6_126: 1993590595944350417
+      ls16uid6_127: 3106319087614395038
+      ls16uid6_128: 3619291604548106130
+      ls16uid6_129: -2297466663571657160
+      ls16uid6_13: 7032217743004322095
+      ls16uid6_130: -2275272043608536855
+      ls16uid6_131: 5133883146991356316
+      ls16uid6_132: 6140095787029849393
+      ls16uid6_14: -7438181818212376969
+      ls16uid6_15: -4153547530144258317
+      ls16uid6_16: -8702833629695404829
+      ls16uid6_17: 2368730285152193177
+      ls16uid6_18: 3823115846782297952
+      ls16uid6_19: -6833638836342421379
+      ls16uid6_2: -4357380831129121917
+      ls16uid6_20: -5886581901789715250
+      ls16uid6_21: 1955691751758051088
+      ls16uid6_22: -9118641840909696503
+      ls16uid6_23: -4820724361852784652
+      ls16uid6_24: -2792430927014127388
+      ls16uid6_25: -5496279340376309787
+      ls16uid6_26: 5068232927020020376
+      ls16uid6_27: -5484622829199045316
+      ls16uid6_28: 8406039107722775838
+      ls16uid6_29: 7400432830512641193
+      ls16uid6_3: -7238771732333573672
+      ls16uid6_30: 6573046759563891990
+      ls16uid6_31: -1444171377077756147
+      ls16uid6_32: -7440504169008907775
+      ls16uid6_33: -2324351558375057186
+      ls16uid6_34: 602783237858496744
+      ls16uid6_35: -7321457157981546447
+      ls16uid6_36: -5556641302272511509
+      ls16uid6_37: -5176340614060198612
+      ls16uid6_38: 1555012581398942962
+      ls16uid6_39: 99042087094712322
+      ls16uid6_4: 8375344198016479277
+      ls16uid6_40: -4042292294987619597
+      ls16uid6_41: 1126427127222747448
+      ls16uid6_42: -3804330427706015111
+      ls16uid6_43: -2539753677178655705
+      ls16uid6_44: -9034021553232469518
+      ls16uid6_45: -8819735850612370987
+      ls16uid6_46: 6905794786923092945
+      ls16uid6_47: 916816763734725010
+      ls16uid6_48: 5852254384792229927
+      ls16uid6_49: 1986406726072538849
+      ls16uid6_5: 5246782587991624721
+      ls16uid6_50: 4970306240461006612
+      ls16uid6_51: -472643130091157868
+      ls16uid6_52: -929985450041028072
+      ls16uid6_53: 1451427484445562129
+      ls16uid6_54: 8496997489442626349
+      ls16uid6_55: 699347527572114818
+      ls16uid6_56: -2765993810925224160
+      ls16uid6_57: -2060268646374720687
+      ls16uid6_58: 944421585366262869
+      ls16uid6_59: -4465456316360946106
+      ls16uid6_6: 1101478752374846098
+      ls16uid6_60: 88469143883881502
+      ls16uid6_61: 7256484357796643143
+      ls16uid6_62: -12988544202086576
+      ls16uid6_63: -8515882622781884605
+      ls16uid6_64: 7124720626075703235
+      ls16uid6_65: -3503213118134517307
+      ls16uid6_66: -4206850153504558267
+      ls16uid6_67: -4980389145979848689
+      ls16uid6_68: -5480032571797467532
+      ls16uid6_69: 7997447687130366830
+      ls16uid6_7: 7940084349192681273
+      ls16uid6_70: -6038716715881463067
+      ls16uid6_71: 4189037117376344209
+      ls16uid6_72: -8948200786341743238
+      ls16uid6_73: -1116917089205988097
+      ls16uid6_74: -6983346740428360974
+      ls16uid6_75: 5379943036106634215
+      ls16uid6_76: 9006725702224400195
+      ls16uid6_77: 6149053283404652000
+      ls16uid6_78: 2113969560852694400
+      ls16uid6_79: 3549870882596494577
+      ls16uid6_8: 8053984487781370428
+      ls16uid6_80: 8891812802326264805
+      ls16uid6_81: -3628969556872300976
+      ls16uid6_82: 7848022171653624047
+      ls16uid6_83: -4504151910683096048
+      ls16uid6_84: 5247911420536572465
+      ls16uid6_85: 6642246504020411671
+      ls16uid6_86: 8138403110506066669
+      ls16uid6_87: 966834877432416755
+      ls16uid6_88: -7833978251055896341
+      ls16uid6_89: 2515314876739460530
+      ls16uid6_9: -3332464015536792799
+      ls16uid6_90: -4871414736769841661
+      ls16uid6_91: -6569447137203286622
+      ls16uid6_92: 8667628611302901913
+      ls16uid6_93: 3759611067459789537
+      ls16uid6_94: 2412961373124559953
+      ls16uid6_95: 4042382655034696072
+      ls16uid6_96: -698485925913360594
+      ls16uid6_97: 1577891798686257681
+      ls16uid6_98: -6979465446806240798
+      ls16uid6_99: 4082027971237828546
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

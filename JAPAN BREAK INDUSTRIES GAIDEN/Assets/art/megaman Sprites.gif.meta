@@ -360,7 +360,7 @@ TextureImporter:
       213: 21300236
     second: megaman Sprites_118
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -377,9 +377,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -388,9 +391,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -411,9 +414,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -425,6 +434,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -437,6 +447,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2951,9 +2975,128 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      megaman Sprites_0: 21300000
+      megaman Sprites_1: 21300002
+      megaman Sprites_10: 21300020
+      megaman Sprites_100: 21300200
+      megaman Sprites_101: 21300202
+      megaman Sprites_102: 21300204
+      megaman Sprites_103: 21300206
+      megaman Sprites_104: 21300208
+      megaman Sprites_105: 21300210
+      megaman Sprites_106: 21300212
+      megaman Sprites_107: 21300214
+      megaman Sprites_108: 21300216
+      megaman Sprites_109: 21300218
+      megaman Sprites_11: 21300022
+      megaman Sprites_110: 21300220
+      megaman Sprites_111: 21300222
+      megaman Sprites_112: 21300224
+      megaman Sprites_113: 21300226
+      megaman Sprites_114: 21300228
+      megaman Sprites_115: 21300230
+      megaman Sprites_116: 21300232
+      megaman Sprites_117: 21300234
+      megaman Sprites_118: 21300236
+      megaman Sprites_12: 21300024
+      megaman Sprites_13: 21300026
+      megaman Sprites_14: 21300028
+      megaman Sprites_15: 21300030
+      megaman Sprites_16: 21300032
+      megaman Sprites_17: 21300034
+      megaman Sprites_18: 21300036
+      megaman Sprites_19: 21300038
+      megaman Sprites_2: 21300004
+      megaman Sprites_20: 21300040
+      megaman Sprites_21: 21300042
+      megaman Sprites_22: 21300044
+      megaman Sprites_23: 21300046
+      megaman Sprites_24: 21300048
+      megaman Sprites_25: 21300050
+      megaman Sprites_26: 21300052
+      megaman Sprites_27: 21300054
+      megaman Sprites_28: 21300056
+      megaman Sprites_29: 21300058
+      megaman Sprites_3: 21300006
+      megaman Sprites_30: 21300060
+      megaman Sprites_31: 21300062
+      megaman Sprites_32: 21300064
+      megaman Sprites_33: 21300066
+      megaman Sprites_34: 21300068
+      megaman Sprites_35: 21300070
+      megaman Sprites_36: 21300072
+      megaman Sprites_37: 21300074
+      megaman Sprites_38: 21300076
+      megaman Sprites_39: 21300078
+      megaman Sprites_4: 21300008
+      megaman Sprites_40: 21300080
+      megaman Sprites_41: 21300082
+      megaman Sprites_42: 21300084
+      megaman Sprites_43: 21300086
+      megaman Sprites_44: 21300088
+      megaman Sprites_45: 21300090
+      megaman Sprites_46: 21300092
+      megaman Sprites_47: 21300094
+      megaman Sprites_48: 21300096
+      megaman Sprites_49: 21300098
+      megaman Sprites_5: 21300010
+      megaman Sprites_50: 21300100
+      megaman Sprites_51: 21300102
+      megaman Sprites_52: 21300104
+      megaman Sprites_53: 21300106
+      megaman Sprites_54: 21300108
+      megaman Sprites_55: 21300110
+      megaman Sprites_56: 21300112
+      megaman Sprites_57: 21300114
+      megaman Sprites_58: 21300116
+      megaman Sprites_59: 21300118
+      megaman Sprites_6: 21300012
+      megaman Sprites_60: 21300120
+      megaman Sprites_61: 21300122
+      megaman Sprites_62: 21300124
+      megaman Sprites_63: 21300126
+      megaman Sprites_64: 21300128
+      megaman Sprites_65: 21300130
+      megaman Sprites_66: 21300132
+      megaman Sprites_67: 21300134
+      megaman Sprites_68: 21300136
+      megaman Sprites_69: 21300138
+      megaman Sprites_7: 21300014
+      megaman Sprites_70: 21300140
+      megaman Sprites_71: 21300142
+      megaman Sprites_72: 21300144
+      megaman Sprites_73: 21300146
+      megaman Sprites_74: 21300148
+      megaman Sprites_75: 21300150
+      megaman Sprites_76: 21300152
+      megaman Sprites_77: 21300154
+      megaman Sprites_78: 21300156
+      megaman Sprites_79: 21300158
+      megaman Sprites_8: 21300016
+      megaman Sprites_80: 21300160
+      megaman Sprites_81: 21300162
+      megaman Sprites_82: 21300164
+      megaman Sprites_83: 21300166
+      megaman Sprites_84: 21300168
+      megaman Sprites_85: 21300170
+      megaman Sprites_86: 21300172
+      megaman Sprites_87: 21300174
+      megaman Sprites_88: 21300176
+      megaman Sprites_89: 21300178
+      megaman Sprites_9: 21300018
+      megaman Sprites_90: 21300180
+      megaman Sprites_91: 21300182
+      megaman Sprites_92: 21300184
+      megaman Sprites_93: 21300186
+      megaman Sprites_94: 21300188
+      megaman Sprites_95: 21300190
+      megaman Sprites_96: 21300192
+      megaman Sprites_97: 21300194
+      megaman Sprites_98: 21300196
+      megaman Sprites_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
